@@ -22,6 +22,9 @@ def syr_plot(lsyr):
     return None
 #######################
 
+### Fonction tertiare
+# fonction qui crée une liste de la suite de syracuse
+
 def syracuse_l(n):
     """retourne la suite de Syracuse de source n
 
@@ -41,6 +44,9 @@ def syracuse_l(n):
         l.append(n)
     return l
 
+### Fonction secondaire
+# affiche le temps de vol
+
 def temps_de_vol(l):
     """Retourne le temps de vol d'une suite de Syracuse
 
@@ -51,8 +57,10 @@ def temps_de_vol(l):
         int: le temps de vol
     """
     #votre code ici
-
     return len(l)-1
+
+### Fonction secondaire
+# affiche le temps de vol en altitude
 
 def temps_de_vol_en_altitude(l):
     """Retourne le temps de vol en altitude d'une suite de Syracuse
@@ -70,6 +78,8 @@ def temps_de_vol_en_altitude(l):
             return i-1
     return n
 
+### Fonction secondaire
+# affiche l'altitude max
 
 def altitude_maximale(l):
     """retourne l'altitude maximale d'une suite de Syracuse
@@ -80,9 +90,7 @@ def altitude_maximale(l):
     Returns:
         int: l'altitude maximale
     """
-    
     # votre code ici
-    
     n = 0
     for i in l:
         if i > n:
@@ -91,10 +99,13 @@ def altitude_maximale(l):
 
 
 #### Fonction principale
-
+# fonction qui fait tourner le code
+# crée un liste de syracuse, et affiche son tps de vol, tps vol en attitude et altitude max
 
 def main():
-
+    """
+    affiche le tps de vol, tps vol en attitude et altitude max de la suite de syracuse
+    """
     # vos appels à la fonction secondaire ici
     lsyr = syracuse_l(15)
     syr_plot(lsyr)
